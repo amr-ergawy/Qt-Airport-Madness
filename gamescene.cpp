@@ -21,10 +21,4 @@ void GameScene::mousePressEvent(QGraphicsSceneMouseEvent * mouseEvent)
     QGraphicsScene::mousePressEvent(mouseEvent);
 }
 
-/*
-GameScene::GameScene()
-{
-
-}
-*/
 

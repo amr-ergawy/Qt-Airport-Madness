@@ -22,12 +22,4 @@ protected:
     void mousePressEvent(QGraphicsSceneMouseEvent * mouseEvent);
 };
 
-/*
-class GameScene
-{
-public:
-    GameScene();
-};
-*/
-
 #endif // GAMESCENE_H
