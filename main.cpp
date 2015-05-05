@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QGraphicsView>
 
 #include "mainwindow.h"
 #include "gamescene.h"
@@ -17,9 +18,19 @@ int main(int argc, char *argv[])
     gameScene.setSceneRect(0, 0, 800, 480);
     gameScene.setItemIndexMethod(QGraphicsScene::NoIndex);
 
-    MainWindow w;
-    w.show();
+    // Initialize Graphics view
+    std::cout << "Initializing view ..." << std::endl;
+    QGraphicsView gameView(&gameScene);
+    gameView.setRenderHint(QPainter::Antialiasing);
+    gameView.setCacheMode(QGraphicsView::CacheBackground);
+    gameView.setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
+    gameView.setDragMode(QGraphicsView::NoDrag);
+    gameView.setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    gameView.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    gameView.setFixedSize(800, 480);
+    gameView.setWindowTitle(QT_TRANSLATE_NOOP(QGraphicsView, "Airport Madness Qt"));
+    gameView.show();
 
-    // return a.exec();
+    // Run the application.
     return game.exec();
 }
