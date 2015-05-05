@@ -1,2 +1,3 @@
 # Qt-Airport-Madness
-A framework and engine for an Airport-Madness game in Qt.
+This is a game engine and level framework for an Airport-Madness like game, where a player take the role of an air-traffic controller. For more details, please check the project web-site:
+https://sites.google.com/site/aergawyprojects/mobapps-and-GUI-projects/qt-airport-madness
