@@ -1,8 +1,11 @@
 #include <QApplication>
 #include <QGraphicsView>
+#include <QDir>
+#include <QString>
 
 #include "mainwindow.h"
 #include "gamescene.h"
+#include "planemodel.h"
 
 #include <iostream>
 
@@ -31,6 +34,10 @@ int main(int argc, char *argv[])
     gameView.setWindowTitle(QT_TRANSLATE_NOOP(QGraphicsView, "Airport Madness Qt"));
     gameView.show();
 
-    // Run the application.
+    // Initialize plane model
+    std::cout << "Initializing plane model ..." << std::endl;
+    PlaneModel::instance(":/arts/plane.png");
+
+    // Run the application
     return game.exec();
 }

@@ -1,2 +1,7 @@
-<RCC/>
-
+<RCC>
+    <qresource prefix="/">
+        <file>arts/level-1.png</file>
+        <file>arts/plane.png</file>
+        <file>levels/level-1.lvl</file>
+    </qresource>
+</RCC>
