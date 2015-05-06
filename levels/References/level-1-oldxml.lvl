@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lvl>
+<level  new-plane-interval="5000">
+    <runway>
+        <path name="departure">
+		<origin x="500" y="120"/>
+		<segment name="taxi" approximate="0">
+			<point x="500" y="120"/>
+			<point x="545" y="160"/>
+		</segment>
+		<segment name="lineup" approximate="0">
+			<point x="545" y="160"/>
+			<point x="570" y="180"/>
+		</segment>
+		<segment name="takeoff" approximate="0">
+			<point x="570" y="180"/>
+			<point x="250" y="480"/>
+		</segment>
+        </path>
+	<path name="arrival">
+		<origin x="650" y="480"/>
+		<segment name="approach" approximate="1">
+			<point x="650" y="480"/>
+			<point x="750" y="100"/>
+			<point x="580" y="160"/>
+		</segment>
+		<segment name="land" approximate="0">
+			<point x="580" y="160"/>
+			<point x="430" y="325"/>
+		</segment>
+		<segment name="taxi" approximate="0">
+			<point x="430" y="325"/>
+			<point x="380" y="280"/>
+			<point x="475" y="180"/>
+			<point x="455" y="160"/>
+		</segment>
+		<segment name="around" approximate="0">
+			<point x="580" y="160"/>
+			<point x="250" y="480"/>
+		</segment>
+	</path>
+    </runway>
+</level>

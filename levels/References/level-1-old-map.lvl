@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lvl>
+<level  new-plane-interval="2500" max-number-of-planes="4">
+    <runway>
+	<direction name="departure">
+		<maneuver  name="taxi">
+			<segment type="line" index="0">
+				<start x="500" y="120"/>
+				<end x="545" y="160"/>
+			</segment>
+		</maneuver>
+		<maneuver  name="lineup">
+			<segment type="line" index="1">
+				<start x="545" y="160"/>
+				<end x="570" y="180"/>
+			</segment>
+		</maneuver>
+		<maneuver name="takeoff">
+			<segment type="line" index="2">
+				<start x="570" y="180"/>
+				<end x="250" y="480"/>
+			</segment>
+		</maneuver>
+        </direction>
+	<direction name="arrival">
+		<maneuver name="approach">
+			<segment type="bezier" index="0">
+				<start x="650" y="480"/>
+				<key1 x="850" y="200"/>
+				<key2 x="700" y="50"/>
+				<end x="580" y="160"/>
+			</segment>	
+		</maneuver>
+		<maneuver name="land">
+			<segment type="line" index="1">
+				<start x="580" y="160"/>
+				<end x="430" y="325"/>
+			</segment>
+		</maneuver>
+		<maneuver name="taxi">
+			<segment type="line" index="2">
+				<start x="430" y="325"/>
+				<end x="380" y="280"/>
+			</segment>
+			<segment type="line" index="3">
+				<start x="380" y="280"/>
+				<end x="475" y="180"/>
+				<clock wise="0"/>
+			</segment>
+			<segment type="line" index="4">
+				<start x="475" y="180"/>
+				<end x="455" y="160"/>
+			</segment>
+		</maneuver>
+		<maneuver name="around">
+			<segment type="line" index="5">
+				<start x="580" y="160"/>
+				<end x="250" y="480"/>
+			</segment>
+		</maneuver>
+	</direction>
+    </runway>
+</level>
