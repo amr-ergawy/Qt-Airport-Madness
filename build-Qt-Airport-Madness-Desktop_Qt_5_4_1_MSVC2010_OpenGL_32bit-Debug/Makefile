@@ -196,6 +196,7 @@ Makefile: ..\Qt-Airport-Madness.pro C:\Qt\5.4\msvc2010_opengl\mkspecs\win32-msvc
 		C:/Qt/5.4/msvc2010_opengl/lib/Qt5Cored.prl \
 		C:/Qt/5.4/msvc2010_opengl/lib/Qt5Widgets.prl \
 		C:/Qt/5.4/msvc2010_opengl/lib/Qt5Gui.prl \
+		C:/Qt/5.4/msvc2010_opengl/lib/Qt5Xml.prl \
 		C:/Qt/5.4/msvc2010_opengl/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-msvc2010 CONFIG+=debug -o Makefile ..\Qt-Airport-Madness.pro
 C:\Qt\5.4\msvc2010_opengl\mkspecs\features\spec_pre.prf:
@@ -321,6 +322,7 @@ C:/Qt/5.4/msvc2010_opengl/lib/qtmaind.prl:
 C:/Qt/5.4/msvc2010_opengl/lib/Qt5Cored.prl:
 C:/Qt/5.4/msvc2010_opengl/lib/Qt5Widgets.prl:
 C:/Qt/5.4/msvc2010_opengl/lib/Qt5Gui.prl:
+C:/Qt/5.4/msvc2010_opengl/lib/Qt5Xml.prl:
 C:/Qt/5.4/msvc2010_opengl/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-msvc2010 CONFIG+=debug -o Makefile ..\Qt-Airport-Madness.pro

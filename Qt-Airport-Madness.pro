@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui \
+    xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,15 +14,37 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
+    mainwindow.cpp \
     gamescene.cpp \
     planemodel.cpp \
-    plane.cpp
+    plane.cpp \
+    levelmanager.cpp \
+    planedirection.cpp \
+    maneuverdescription.cpp \
+    maneuversegment.cpp \
+    anglemaneuversegment.cpp \
+    beziermaneuversegment.cpp \
+    linemaneuversegment.cpp \
+    beziermaneuveranimation.cpp \
+    linemaneuveranimation.cpp \
+    gamelevel.cpp \
+    runway.cpp
 
 HEADERS  += mainwindow.h \
     gamescene.h \
     planemodel.h \
-    plane.h
+    plane.h \
+    levelmanager.h \
+    planedirection.h \
+    maneuverdescription.h \
+    maneuversegment.h \
+    anglemaneuversegment.h \
+    beziermaneuversegment.h \
+    linemaneuversegment.h \
+    beziermaneuveranimation.h \
+    linemaneuveranimation.h \
+    gamelevel.h \
+    runway.h
 
 FORMS    += mainwindow.ui
 

@@ -6,6 +6,7 @@
 #include "mainwindow.h"
 #include "gamescene.h"
 #include "planemodel.h"
+#include "levelmanager.h"
 
 #include <iostream>
 
@@ -37,6 +38,10 @@ int main(int argc, char *argv[])
     // Initialize plane model
     std::cout << "Initializing plane model ..." << std::endl;
     PlaneModel::instance(":/arts/plane.png");
+
+    // Initialize level manager
+    std::cout << "Initializing level manager ..." << std::endl;
+    LevelManager::instance(&gameView);
 
     // Run the application
     return game.exec();
