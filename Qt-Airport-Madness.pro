@@ -28,7 +28,11 @@ SOURCES += main.cpp\
     beziermaneuveranimation.cpp \
     linemaneuveranimation.cpp \
     gamelevel.cpp \
-    runway.cpp
+    runway.cpp \
+    gameengine.cpp \
+    landingpilot.cpp \
+    pilot.cpp \
+    takeoffpilot.cpp
 
 HEADERS  += mainwindow.h \
     gamescene.h \
@@ -44,7 +48,11 @@ HEADERS  += mainwindow.h \
     beziermaneuveranimation.h \
     linemaneuveranimation.h \
     gamelevel.h \
-    runway.h
+    runway.h \
+    gameengine.h \
+    landingpilot.h \
+    pilot.h \
+    takeoffpilot.h
 
 FORMS    += mainwindow.ui
 

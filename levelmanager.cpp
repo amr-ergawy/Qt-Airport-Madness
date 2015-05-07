@@ -7,8 +7,8 @@ GameLevel *LevelManager::currentLevel = 0;
 bool LevelManager::createLevel(int levelIndex)
 {
     // Create level file and image file names
-    QString fileName = QDir::currentPath() + QString("/levels/level-");
-    QString imageFileName = QDir::currentPath() + QString("/arts/level-");
+    QString fileName = QString(":/levels/level-");
+    QString imageFileName = QString(":/arts/level-");
     switch (levelIndex) {
     case 1:
         fileName.append("1.lvl");

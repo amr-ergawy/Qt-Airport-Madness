@@ -57,7 +57,7 @@ void LandingPilot::maneuverFinished()
     if (this->stillApproaching) {
         this->stillApproaching = false;
         this->startNextManeuver();
-    } else if (finishedManeuverName.operator ==(QString("land"))) {
+    } else if (finishedManeuverName.operator ==("land")) {
         this->nextManeuver = this->taxiManeuver;
         this->startNextManeuver();
     } else {
@@ -88,7 +88,7 @@ bool LandingPilot::processCommand(QAction * action)
               << action->text().toStdString()
               << std::endl;
 
-    if (action->text().operator ==(QString("move"))) {
+    if (action->text().operator ==("move")) {
         if (this->currentManeuver != NULL &&
             this->currentManeuver->state() == QAbstractAnimation::Paused) {
             std::cout << "Landing pilot resuming paused maneuver ... "

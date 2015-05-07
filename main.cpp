@@ -7,6 +7,7 @@
 #include "gamescene.h"
 #include "planemodel.h"
 #include "levelmanager.h"
+#include "gameengine.h"
 
 #include <iostream>
 
@@ -42,6 +43,14 @@ int main(int argc, char *argv[])
     // Initialize level manager
     std::cout << "Initializing level manager ..." << std::endl;
     LevelManager::instance(&gameView);
+
+    // Initialize game engine
+    std::cout << "Initializing game engine ..." << std::endl;
+    GameEngine * gameEngine = GameEngine::instance(1);
+
+    // Starting engine
+    std::cout << "Starting game engine ..." << std::endl;
+    gameEngine->startNextLevel();
 
     // Run the application
     return game.exec();
